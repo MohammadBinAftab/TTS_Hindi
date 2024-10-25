@@ -53,8 +53,8 @@ Description of the loss curve and what it indicates about training.
 
 ## Performance Evaluation
 ### Metrics:
-Mean Opinion Score (MOS): [Score]
-Character Error Rate (CER): [Score]
+- Mean Opinion Score (MOS): [Score]
+* Character Error Rate (CER): [Score]
 Results:
 Pre-trained model: [Metrics]
 Fine-tuned model: [Metrics]
@@ -68,13 +68,6 @@ Fine-tuned Model: [Link or description of the audio sample]
 ## Installation
 To set up the environment, run the following commands:
 
-git clone https://github.com/ShigrafS/HindiTTS.git
+```git clone https://github.com/ShigrafS/HindiTTS.git
 cd your-repo
 pip install -r requirements.txt
-Usage
-To use the model via pipeline, run the following code:
-
-# Use a pipeline as a high-level helper
-from transformers import pipeline
-
-pipe = pipeline("text-to-audio", model="ShigrafS/hindi_text_to_speech_tts")
