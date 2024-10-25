@@ -10,10 +10,7 @@ This repository contains the code and resources for training a text-to-speech (T
 - Approach
 - Performance Evaluation
 - Audio Samples
-## Installation
-Usage
-Contributing
-License
+  
 ## Introduction
 This is a Microsoft SpeechT5 model fine-tuned for Hindi.
 
@@ -30,9 +27,9 @@ This is a Microsoft SpeechT5 model fine-tuned for Hindi.
 ## Model Architecture
 This project utilizes the Microsoft Text-To-Speech architecture, which is based on Google T5 model.
 
-Key Features
+### Key Features
 [List any specific features or modifications made to the model]
-Approach
+## Approach
 The dataset stored on Kaggle contains the wav files and the labels. They are loaded onto a dataset dictionary along with it's array representation and sampling rate. All the characters are extracted and the new characters found in the data is added to the tokenizer. Speechbrain model is used to generate the speaker embeddings to help the model adjust it's output. The dataset is prepared and longer files are trimmed off so as per the model requirement. SpeechT5 takes 600 token length of input. The dataset is split into train and test. A data collator is implemented to handle the padding. Training arguments is set up along with a remote repository. The model is set to be trained for 7 epochs. The training is done in steps to handle limited colab GPU access. The model is pushed to HuggingFace repository.
 
 ## Training Setup
@@ -43,13 +40,14 @@ Libraries:
 - NumPy: 1.26.4
 - Pandas: 2.2.2
 -Matplotlib: 3.7.1
-###Hyperparameters:
+### Hyperparameters:
 - Learning rate: [Value]
 - Batch size: [Value]
 - Number of epochs: 20
-###Training Logs
+### Training Logs
 Loss Curve
 Description of the loss curve and what it indicates about training.
+Ensure you've CUDA enabled locally to use.
 
 ## Performance Evaluation
 ### Metrics:
@@ -68,6 +66,7 @@ Fine-tuned Model: [Link or description of the audio sample]
 ## Installation
 To set up the environment, run the following commands:
 
-```git clone https://github.com/ShigrafS/HindiTTS.git
+```
+git clone https://github.com/MohammadBinAftab/TTS_Hindi.git
 cd your-repo
 pip install -r requirements.txt
