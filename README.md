@@ -3,13 +3,13 @@
 This repository contains the code and resources for training a text-to-speech (TTS) model. The goal is to fine-tune a pre-trained TTS model to improve speech quality and adapt to specific speaker characteristics.
 
 ## Table of Contents
--Introduction
--Dataset Description
--Model Architecture
--Training Setup
--Approach
--Performance Evaluation
--Audio Samples
+- Introduction
+- Dataset Description
+- Model Architecture
+- Training Setup
+- Approach
+- Performance Evaluation
+- Audio Samples
 ## Installation
 Usage
 Contributing
@@ -18,15 +18,15 @@ License
 This is a Microsoft SpeechT5 model fine-tuned for Hindi.
 
 ## Dataset Description
--Source: https://www.kaggle.com/datasets/skywalker290/hindi-f
+- Source: https://www.kaggle.com/datasets/skywalker290/hindi-f
 ## Content:
--No of Audio files: 16512
--Number of speakers: 1
--Types of speech: Scripted
+- No of Audio files: 16512
+- Number of speakers: 1
+- Types of speech: Scripted
 *Preprocessing Steps:
--Normalization of audio levels
--Segmentation into shorter clips
--Tokenization of text data
+- Normalization of audio levels
+- Segmentation into shorter clips
+- Tokenization of text data
 ## Model Architecture
 This project utilizes the Microsoft Text-To-Speech architecture, which is based on Google T5 model.
 
@@ -39,15 +39,15 @@ The dataset stored on Kaggle contains the wav files and the labels. They are loa
 ### Environment:
 Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
 Libraries:
-PyTorch: 2.5.0+cu121
-NumPy: 1.26.4
-Pandas: 2.2.2
-Matplotlib: 3.7.1
-Hyperparameters:
-Learning rate: [Value]
-Batch size: [Value]
-Number of epochs: 20
-Training Logs
+- PyTorch: 2.5.0+cu121
+- NumPy: 1.26.4
+- Pandas: 2.2.2
+-Matplotlib: 3.7.1
+###Hyperparameters:
+- Learning rate: [Value]
+- Batch size: [Value]
+- Number of epochs: 20
+###Training Logs
 Loss Curve
 Description of the loss curve and what it indicates about training.
 
@@ -55,7 +55,7 @@ Description of the loss curve and what it indicates about training.
 ### Metrics:
 - Mean Opinion Score (MOS): [Score]
 * Character Error Rate (CER): [Score]
-Results:
+### Results:
 Pre-trained model: [Metrics]
 Fine-tuned model: [Metrics]
 Analysis of performance improvements observed during fine-tuning.
